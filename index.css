@@ -1,16 +1,41 @@
+/* 
+ *  For desktop
+ *
+ */
+@media screen and (min-width: 1081px) {
 h1 {
+	background-color: #fff;
+	width: 25%;
+	margin: 3% auto 5% auto;
+}
+}
+
+/*   
+ *  For mobile
+ *
+ */
+@media screen and (max-width: 1080px) {
+h1 {
+	background-color: #fff;
+	width: 75%;
+	margin: 3% auto 5% auto;
+}
+}
+
+
+
+body {
+	background-color: #ccccb3;
 	font-family: sans-serif;
-	color: blue;
+}
+
+header {
+	color: #a6a6a6;
 	text-align: center;
 }
 
-body {
-	background-color: red;
-}
-
-button {
+.btn {
 	width: 5%;
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
