@@ -1,19 +1,43 @@
 <!doctype html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
 	<title>This is the Site</title>
 </head>
 <body>
-	<header>
-		<h1 class="inactive">This is the site</h1>
+	<header class="box">
+		<h1>This is the site</h1>
 	</header>
+	<nav class="box">
+		<button id="btntop">Toggle Top Box</button>
+		<button id="btnmid">Toggle Middle Box</button>
+		<button id="btnbtm">Toggle Bottom Box</button>
+	</nav>
 	<main>
-		<div class="btn">
-		<button onclick="buttonFunction()">Click Here</button>
+		<div class="box" id="top">
+			<h3>Top div</h3>
+			<div class="btn">
+			<button>Click Here</button>
+			</div>
+			<br>
+			<br>
+		</div>
+		<div class="box" id="mid">
+			<h3>Middle div</h3>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		<div class="box" id="btm">
+			<h3>Bottom div</h3>
+			<br>
+			<br>
+			<br>
+			<br>
 		</div>
 	</main>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
