@@ -1,4 +1,4 @@
-/* 
+/*
  *  For desktop
  *
  */
@@ -11,7 +11,7 @@ header {
 }
 
 
-/*   
+/*
  *  For mobile
  *
  */
@@ -21,12 +21,6 @@ header {
 	width: 75%;
 }
 
-}
-
-h1 {
-	background-color: #fff;
-	border-radius: 5px;
-	box-shadow: 2px 2px;
 }
 
 body {

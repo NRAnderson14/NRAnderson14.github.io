@@ -1,39 +1,45 @@
-function buttonFunction() {
-	alert("You pressed the button");
+function print(e, id) {
+	document.getElementById(id).innerHTML = e;
 }
 
-$(document).ready(function(){
-	$(".btn").click(function(){
-		$("h1").toggle(1000);
-	});
-	
-	$("#btntop").click(function(){
-		$("#top").toggle(750);
-	});
-	
-	$("#btnmid").click(function(){
-		$("#mid").toggle(750);
-	});
-	
-	$("#btnbtm").click(function(){
-		$("#btm").toggle(750);
-	});
-	
-	$("#top").hover(function(){
-		$("#top").fadeTo(100, 1);
-	}, function(){
-		$("#top").fadeTo(100, .25);
-	});
-	
-	$("#mid").hover(function(){
-		$("#mid").fadeTo(100, 1);
-	}, function(){
-		$("#mid").fadeTo(100, .25);
-	});
-	
-	$("#btm").hover(function(){
-		$("#btm").fadeTo(100, 1);
-	}, function(){
-		$("#btm").fadeTo(100, .25);
-	});
-});
+
+function arrayStringBuilder(a) {
+	var returnString = "";
+
+	for (var i = 0; i < a.length; i++) {
+		returnString += a[i] + " ";
+	}
+
+	return returnString;
+}
+
+
+function bubbleSort(a) {
+	var pass   = 1;
+
+	do {
+		var swapped = false;
+		for (var i = 0; i < a.length - pass; i++) {
+			if (a[i] > a[i+1]) {
+				var temp = a[i];
+				a[i]     = a[i+1];
+				a[i+1]   = temp;
+				swapped  = true;
+			}
+			pass++;
+		}
+	} while (swapped);
+}
+
+
+function generateArray(n) {
+	var a = [-1];
+
+	for (var i = 0; i <= a.length; i++) {
+		a[i] = parseInt(Math.random() * 100);
+	}
+
+	return a;
+}
+
+var nums = [1, 2, 3, 4, 5];

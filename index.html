@@ -2,8 +2,9 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script type="text/javascript" src="scripts.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="query.js"></script>
+	<script type="text/javascript" src="scripts.js"></script> -->
 	<title>This is the Site</title>
 </head>
 <body>
@@ -26,8 +27,8 @@
 		</div>
 		<div class="box" id="mid">
 			<h3>Middle div</h3>
-			<br>
-			<br>
+			<button onclick="print(arrayStringBuilder(nums), &quot;ar1&quot;)">Print the Array</button>
+			<p id="ar1"></p>
 			<br>
 			<br>
 		</div>
@@ -39,5 +40,8 @@
 			<br>
 		</div>
 	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="query.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
