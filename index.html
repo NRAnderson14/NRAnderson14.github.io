@@ -2,46 +2,25 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script type="text/javascript" src="query.js"></script>
-	<script type="text/javascript" src="scripts.js"></script> -->
 	<title>This is the Site</title>
 </head>
 <body>
 	<header class="box">
 		<h1>This is the site</h1>
 	</header>
-	<nav class="box">
-		<button id="btntop">Toggle Top Box</button>
-		<button id="btnmid">Toggle Middle Box</button>
-		<button id="btnbtm">Toggle Bottom Box</button>
-	</nav>
 	<main>
-		<div class="box" id="top">
-			<h3>Top div</h3>
-			<div class="btn">
-			<button>Click Here</button>
-			</div>
-			<br>
-			<br>
-		</div>
-		<div class="box" id="mid">
-			<h3>Middle div</h3>
-			<button onclick="print(arrayStringBuilder(nums), &quot;ar1&quot;)">Print the Array</button>
-			<p id="ar1"></p>
-			<br>
-			<br>
-		</div>
-		<div class="box" id="btm">
-			<h3>Bottom div</h3>
-			<br>
-			<br>
-			<br>
-			<br>
+		<div class="box" id="container">
+			<form>
+				<label>Array Size
+					<input type="number" name="size" id="arraySize" min="1"
+				max="10" value="5"></label>
+				<br>
+				<input type="button" value="Generate Array"
+				onclick="arrayDivMaker()">
+			</form>
+			<div id="arraySlot"></div>
 		</div>
 	</main>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script type="text/javascript" src="query.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
