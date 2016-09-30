@@ -78,9 +78,13 @@ function applyArrayCSS() {
  *	Appends page with divs of an array
  */
 function arrayDivMaker() {
-	deletePriorArray();
 	var arSize = document.getElementById("arraySize").value;
-	var arr 	 = genSortArray(arSize);
-	parseArray(arr);
-	applyArrayCSS();
+	if (arSize >= 1 && arSize <= 20) {
+		deletePriorArray();
+		var arr 	 = genSortArray(arSize);
+		parseArray(arr);
+		applyArrayCSS();
+	} else {
+		alert("Value entered must be between 1 and 20");
+	}
 }
