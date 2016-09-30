@@ -51,9 +51,7 @@ function parseArray(a) {
 	for (var i = 0; i < a.length; i++) {
 		var bdiv 		 	 = document.createElement("div");
 		bdiv.className = "arrayElement";
-		bdiv.idName		 = a[i];
-		var bdivText 	 = document.createTextNode(a[i]);
-		bdiv.appendChild(bdivText);
+		bdiv.id 			 = a[i];
 		document.getElementById("container").appendChild(bdiv);
 	}
 }
@@ -68,6 +66,14 @@ function deletePriorArray() {
 	}
 }
 
+
+function applyArrayCSS() {
+	var elements = document.getElementsByClassName("arrayElement");
+	for (var i = 0; i < elements.length; i++) {
+		elements[i].style.height = elements[i].id + "px";
+	}
+}
+
 /*
  *	Appends page with divs of an array
  */
@@ -76,4 +82,5 @@ function arrayDivMaker() {
 	var arSize = document.getElementById("arraySize").value;
 	var arr 	 = genSortArray(arSize);
 	parseArray(arr);
+	applyArrayCSS();
 }
